@@ -1,0 +1,3 @@
+#!/bin/bash
+# assumes your EMU key is in ~/.ssh/id_rsa_ghecemu
+git clone $@ --config core.sshCommand="/usr/bin/ssh -i ~/.ssh/id_rsa_ghecemu"
