@@ -1,0 +1,5 @@
+#!/bin/bash
+# Configures a local Git repo to use a different SSH file path
+
+git config --local core.sshcommand "/usr/bin/ssh -i ~/.ssh/id_rsa_ghecemu"
+git config --get --local core.sshcommand
